@@ -7,17 +7,25 @@
 body {
   display: flex;
   flex-direction: column;
-  padding: 73px 213px;
+  align-items: center;
+}
+main {
+  margin: 50px 213px 15px 213px;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 header {
   position: fixed;
   display: flex;
-  top: 0px;
+  top: 0;
   justify-content: space-between;
-  align-items: center;
+  align-content: center;
+
+  padding: 0px 230px;
   width: 100vw;
-  padding-right: 445px;
 
   background-color: #ffff;
 
@@ -72,21 +80,20 @@ button {
   background-color: #ffffff;
 }
 
-.roda-pe {
+footer {
   display: flex;
   flex-direction: row;
   align-items: center;
-  position: fixed;
   justify-content: space-between;
+  padding: 0px 230px;
 
-  width: 100%;
+  width: 100vw;
   height: 80px;
-  bottom: 0;
-  left: 0;
 
   background-color: #33323d;
 }
-.roda-pe ul {
+
+footer ul {
   display: flex;
   gap: 30px;
   align-items: center;
@@ -100,17 +107,17 @@ button {
   text-transform: uppercase;
 }
 
-.roda-pe ul li a {
+footer ul li a {
   list-style: none;
   text-decoration: none;
   color: #ffff;
 }
 
-.roda-pe ul li a:hover {
+footer ul li a:hover {
   color: #5fb4a2;
 }
 
-.sociais img {
+footer img {
   padding: 0px 5px;
   cursor: pointer;
 }
