@@ -8,11 +8,17 @@ body {
 }
 
 header {
-  position: sticky;
+  position: fixed;
   display: flex;
   top: 0;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  padding-right: 430px;
+
+  background-color: #ffff;
+
+  z-index: 1;
 }
 
 header ul {
